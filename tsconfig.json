@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    //"lib": ["es2018", "esnext"],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    /* Basic Options */
+    "target": "es6", /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */
+    "module": "commonjs", /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+    "declaration": false, /* Generates corresponding '.d.ts' file. */
+    "sourceMap": true, /* Generates corresponding '.map' file. */
+    "outDir": "JsOutputFolder", /* Redirect output structure to the directory. */
+    "removeComments": false, /* Do not emit comments to output. */
+    /* Strict Type-Checking Options */
+    "noImplicitAny": true, /* Raise error on expressions and declarations with an implied 'any' type. */
+    /* Module Resolution Options */
+    "moduleResolution": "node", /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
+    "types": [
+      "node"
+    ], /* Type declaration files to be included in compilation. */
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "typedocOptions": {
+    "out": "docs",
+    "inputFiles": [
+      
+      "./Utils"
+    ],
+    "excludeNotExported": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

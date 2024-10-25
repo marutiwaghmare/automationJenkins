@@ -1,0 +1,36 @@
+# These are some examples of commonly ignored file patterns.
+# You should customize this list as applicable to your project.
+# Learn more about .gitignore:
+#     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
+
+# Node artifact files
+
+node_modules/
+JsOutputFolder/
+JSFiles/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+Failed_Scenario_Data/Failed_Scenario_Videos/*
+Failed_Scenario_Data/Failed_Scenario_Traces/*
+Failed_Scenario_Data/Failed_Scenario_Screenshots/*
+!/Failed_Scenario_Data/**/.gitkeep
+cucumber-playwright-report.html
+cucumber-playwright-report.json
+resultSummary.json
+processedResults.txt
+FeatureBreakdown.xlsx
+# Large media files
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv
+
+# playwrightautomation
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
