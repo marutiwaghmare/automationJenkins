@@ -4,10 +4,10 @@ import { Page, Locator } from "@playwright/test";
 export class LoginPageLocate {
     public page: Page;
     //Login Fields
-    txtEmail: Locator;
-    btnNextPwd: Locator;
-    txtPassword: Locator;
-    btnLogin: Locator;
+    inputName:Locator;
+    inputEmail:Locator;
+    btnSignUp:Locator;
+    btnLogin:Locator;
 
    
    
@@ -17,10 +17,10 @@ export class LoginPageLocate {
         this.page = page;
 
         //Login Fields
-        this.txtEmail = page.locator("//input[contains(@type,'email')]")
-        this.btnNextPwd = page.locator('text=Next');
-        this.txtPassword = page.locator("//input[contains(@type,'password')]")
-        this.btnLogin =  page.locator("//span[contains(text(),'Login')]");
+        this.inputName = page.locator("input[name*=name]")
+        this.inputEmail = page.locator('input[data-qa=signup-email]');
+        this.btnSignUp = page.locator("button[data-qa=signup-button]")
+        this.btnLogin =  page.locator("button[data-qa*=login]");
 
         //Validations
        

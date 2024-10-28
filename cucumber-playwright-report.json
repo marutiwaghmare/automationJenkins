@@ -4,42 +4,87 @@
     "elements": [
       {
         "description": "",
-        "id": "login-admin-app;user-login-admin-app-with-valid-creds",
+        "id": "verify-scenarios;:-register-new-user",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "User Login admin app with Valid creds",
+        "line": 7,
+        "name": ": Register new user",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "User Logs in as admin user",
+            "name": "Launch URL and verify",
             "match": {
               "location": "StepDef\\Login.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 32917758999
+              "duration": 16755317900
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
-            "name": "User should click on Client Tab",
+            "line": 8,
+            "name": "User should click sign up login button",
+            "match": {
+              "location": "StepDef\\Login.ts:30"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 7561564399
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
-            "name": "User clicks on \"AutoRoboto\" client under Client Collection",
+            "line": 9,
+            "name": "User should enter name as \"Example8\" and email as \"exampletest08@gmail.com\" and click on sign up button",
+            "match": {
+              "location": "StepDef\\Login.ts:35"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 12117907399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "User should register form",
+            "match": {
+              "location": "StepDef\\Login.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43532746100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see a success message",
+            "match": {
+              "location": "StepDef\\Login.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8301822700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "user should scroll down the page and last third product add to cart and verify message and continue",
+            "match": {
+              "location": "StepDef\\Login.ts:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17866671300
             }
           }
         ],
@@ -47,10 +92,10 @@
         "type": "scenario"
       }
     ],
-    "id": "login-admin-app",
+    "id": "verify-scenarios",
     "line": 1,
     "keyword": "Feature",
-    "name": "Login admin app",
+    "name": "Verify scenarios",
     "tags": [],
     "uri": "Features\\Login.feature"
   }

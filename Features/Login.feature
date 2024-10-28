@@ -1,7 +1,14 @@
- Feature: Login admin app
- 
- Scenario: User Login admin app with Valid creds
+Feature: Verify scenarios
 
-         Given User Logs in as admin user
-        When User should click on Client Tab
-        When User clicks on "AutoRoboto" client under Client Collection
+        Background: Launching URL
+
+                Given Launch URL and verify
+
+        Scenario: : Register new user
+         When User should click sign up login button
+         When User should enter name as "Example8" and email as "exampletest08@gmail.com" and click on sign up button
+         When User should register form
+         Then I should see a success message
+         When user should scroll down the page and last third product add to cart and verify message and continue
+
+
